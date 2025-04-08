@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Waveform, Clock, ArrowUp } from 'lucide-react';
+import { AudioWaveform, Clock, ArrowUp } from 'lucide-react';
 
 const HeroPage = () => {
   return (
@@ -28,7 +28,7 @@ const HeroPage = () => {
         <div className="w-1/2 flex justify-center items-center">
           <div className="relative w-full h-32">
             <div className="absolute inset-0 flex items-center justify-center">
-              <Waveform size={48} className="text-brochure-gradient-from animate-pulse-glow" />
+              <AudioWaveform size={48} className="text-brochure-gradient-from animate-pulse-glow" />
             </div>
             <div className="absolute inset-0 bg-gradient-accent opacity-10 blur-xl rounded-full"></div>
           </div>
