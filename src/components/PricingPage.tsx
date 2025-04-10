@@ -1,7 +1,7 @@
+
 import React from 'react';
 import { Phone, Calendar, Globe, Flag, MapPin, ArrowRight } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import CanadianFooter from './CanadianFooter';
 
 const PricingPage = () => {
   return (
@@ -145,8 +145,18 @@ const PricingPage = () => {
         </p>
       </div>
       
-      {/* Footer */}
-      <CanadianFooter />
+      {/* Canadian Flag and Office Address */}
+      <div className="mt-auto text-center">
+        <div className="flex justify-center items-center gap-2 mb-3">
+          <Flag size={18} className="text-red-500" />
+          <span className="text-sm font-medium">Proudly Canadian</span>
+        </div>
+        
+        <div className="flex justify-center items-center gap-1.5 text-xs text-brochure-gray">
+          <MapPin size={12} />
+          <span>700 2 St SW, Calgary, AB T2P 2W2, Canada</span>
+        </div>
+      </div>
     </div>
   );
 };

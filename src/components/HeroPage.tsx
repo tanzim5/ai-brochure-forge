@@ -1,6 +1,6 @@
+
 import React from 'react';
 import { AudioWaveform, Clock, ArrowUp, Phone } from 'lucide-react';
-import CanadianFooter from './CanadianFooter';
 
 const HeroPage = () => {
   return (
@@ -69,9 +69,6 @@ const HeroPage = () => {
           <ArrowUp className="text-brochure-gradient-from" size={24} />
         </div>
       </div>
-      
-      {/* Footer */}
-      <CanadianFooter />
     </div>
   );
 };
