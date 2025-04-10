@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AudioWaveform, Clock, ArrowUp } from 'lucide-react';
+import { AudioWaveform, Clock, ArrowUp, Phone } from 'lucide-react';
 
 const HeroPage = () => {
   return (
@@ -9,6 +9,13 @@ const HeroPage = () => {
       <div className="text-center mb-5">
         <h1 className="font-space font-bold text-xl mb-1 gradient-text">Armadas</h1>
         <p className="text-brochure-gray text-sm">AI Automation Agency</p>
+      </div>
+      
+      {/* Headline */}
+      <div className="text-center mb-6">
+        <h2 className="font-space font-bold text-3xl gradient-text">
+          Put AI on the Phones. Close Deals While You Sleep.
+        </h2>
       </div>
       
       {/* Header Section */}
@@ -27,8 +34,11 @@ const HeroPage = () => {
         <div className="w-1/2">
           <h3 className="font-space font-semibold text-xl mb-3">What is AI Automation?</h3>
           <p className="text-brochure-gray">
-            Our AI solution handles calls, messages, and inquiries 24/7, qualifying leads and 
-            routing customers through your sales process with unprecedented efficiency.
+            AI automation is your unfair advantage.
+            It's not just tech—it's a tireless team member that never takes a break, never fumbles a call, and never misses a lead.
+          </p>
+          <p className="text-brochure-gray mt-2">
+            Our system replaces outdated, human-dependent processes with intelligent voice agents that handle inbound and outbound calls, qualify leads, book appointments, and follow up—all without dropping the ball.
           </p>
         </div>
         <div className="w-1/2 flex justify-center items-center">
@@ -46,6 +56,10 @@ const HeroPage = () => {
         <h3 className="font-space font-semibold text-xl mb-4 flex items-center">
           <Clock className="mr-2 text-brochure-gradient-to" size={20} /> Why Now?
         </h3>
+        <p className="text-xl mb-3 text-brochure-gray">
+          The industry's changing. Speed is everything.
+          If you're not first to the lead, you're forgotten.
+        </p>
         <p className="text-xl font-medium text-center italic px-4">
           "In today's competitive market, the difference between success and failure is 
           <span className="gradient-text font-bold"> how quickly you respond </span>
