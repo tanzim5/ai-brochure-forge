@@ -28,7 +28,8 @@ const BrochureLayout = () => {
         />
       </div>
 
-      <style jsx global>{`
+      <style>
+        {`
         .gradient-text {
           background: linear-gradient(to right, #32e4b2, #5ca0ff);
           -webkit-background-clip: text;
@@ -104,7 +105,8 @@ const BrochureLayout = () => {
           border-radius: 50%;
           background: linear-gradient(to right, #32e4b2, #5ca0ff);
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
