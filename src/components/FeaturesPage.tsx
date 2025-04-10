@@ -33,6 +33,12 @@ const TimelineStep = ({ title, description }: { title: string, description: stri
 const FeaturesPage = () => {
   return (
     <div className="flex flex-col h-full">
+      {/* Company Name at Top */}
+      <div className="text-center mb-5">
+        <h1 className="font-space font-bold text-xl mb-1 gradient-text">Armadas</h1>
+        <p className="text-brochure-gray text-sm">AI Automation Agency</p>
+      </div>
+      
       <h2 className="font-space font-bold text-2xl mb-5">Feature Stack</h2>
       
       {/* Features Grid */}

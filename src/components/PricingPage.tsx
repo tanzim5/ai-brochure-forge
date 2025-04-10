@@ -1,14 +1,20 @@
 
 import React from 'react';
-import { Phone, Calendar, Globe } from 'lucide-react';
+import { Phone, Calendar, Globe, Flag, MapPin } from 'lucide-react';
 
 const PricingPage = () => {
   return (
     <div className="flex flex-col h-full">
+      {/* Company Name at Top */}
+      <div className="text-center mb-5">
+        <h1 className="font-space font-bold text-xl mb-1 gradient-text">Armadas</h1>
+        <p className="text-brochure-gray text-sm">AI Automation Agency</p>
+      </div>
+      
       <h2 className="font-space font-bold text-2xl mb-5">Pricing</h2>
       
       {/* Pricing Card */}
-      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 mb-8 text-center">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 mb-6 text-center">
         <p className="text-brochure-gray font-medium mb-2">Starting at</p>
         <div className="mb-4">
           <span className="font-space font-bold text-4xl gradient-text">$1,499</span>
@@ -48,7 +54,7 @@ const PricingPage = () => {
       </div>
       
       {/* CTA Section */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h3 className="font-space font-semibold text-xl mb-4">Ready to transform your business?</h3>
         
         <div className="flex flex-col gap-3">
@@ -65,11 +71,24 @@ const PricingPage = () => {
       </div>
       
       {/* Final Quote */}
-      <div className="mt-auto bg-gradient-to-r from-brochure-gradient-from/20 to-brochure-gradient-to/20 rounded-lg p-6">
+      <div className="bg-gradient-to-r from-brochure-gradient-from/20 to-brochure-gradient-to/20 rounded-lg p-6 mb-5">
         <p className="text-center font-space italic font-medium text-xl">
           "This is not the future. This is now.<br />
           <span className="font-bold">Arm yourself with AI</span>—before your competition does."
         </p>
+      </div>
+      
+      {/* Canadian Flag and Office Address */}
+      <div className="mt-auto text-center">
+        <div className="flex justify-center items-center gap-2 mb-3">
+          <Flag size={18} className="text-red-500" />
+          <span className="text-sm font-medium">Proudly Canadian</span>
+        </div>
+        
+        <div className="flex justify-center items-center gap-1.5 text-xs text-brochure-gray">
+          <MapPin size={12} />
+          <span>700 2 St SW, Calgary, AB T2P 2W2, Canada</span>
+        </div>
       </div>
     </div>
   );
