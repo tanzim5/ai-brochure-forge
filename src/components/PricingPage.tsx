@@ -24,9 +24,21 @@ const PricingPage = () => {
             <span className="text-brochure-gradient-from mr-2">•</span>
             <span>Full CRM integration & automation</span>
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center mb-2">
             <span className="text-brochure-gradient-from mr-2">•</span>
             <span>Dedicated success manager</span>
+          </li>
+          <li className="flex items-center mb-2">
+            <span className="text-brochure-gradient-from mr-2">•</span>
+            <span>Per minute cost: $0.13/minute</span>
+          </li>
+          <li className="flex items-center mb-2">
+            <span className="text-brochure-gradient-from mr-2">•</span>
+            <span>Setup fee: $1,000-$15,000 (based on complexity)</span>
+          </li>
+          <li className="flex items-center">
+            <span className="text-brochure-gradient-from mr-2">•</span>
+            <span>Optional monthly retainer: $300-$500</span>
           </li>
         </ul>
         
