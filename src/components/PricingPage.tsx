@@ -2,15 +2,13 @@
 import React from 'react';
 import { Phone, Calendar, Globe, Flag, MapPin, ArrowRight } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import BrochureHeader from './BrochureHeader';
 
 const PricingPage = () => {
   return (
     <div className="flex flex-col h-full">
-      {/* Company Name at Top */}
-      <div className="text-center mb-5">
-        <h1 className="font-space font-bold text-xl mb-1 gradient-text">Armadas</h1>
-        <p className="text-brochure-gray text-sm">AI Automation Agency</p>
-      </div>
+      {/* Company Logo and Name at Top */}
+      <BrochureHeader />
       
       <h2 className="font-space font-bold text-2xl mb-5">Pricing</h2>
       

@@ -1,15 +1,13 @@
 
 import React from 'react';
-import { AudioWaveform, Clock, ArrowUp, Phone } from 'lucide-react';
+import { AudioWaveform, Clock, ArrowUp, Phone, Flag, MapPin } from 'lucide-react';
+import BrochureHeader from './BrochureHeader';
 
 const HeroPage = () => {
   return (
     <div className="flex flex-col h-full">
-      {/* Company Name at Top */}
-      <div className="text-center mb-5">
-        <h1 className="font-space font-bold text-xl mb-1 gradient-text">Armadas</h1>
-        <p className="text-brochure-gray text-sm">AI Automation Agency</p>
-      </div>
+      {/* Company Logo and Name at Top */}
+      <BrochureHeader />
       
       {/* Headline */}
       <div className="text-center mb-6">
@@ -67,6 +65,19 @@ const HeroPage = () => {
         </p>
         <div className="mt-4 flex justify-end">
           <ArrowUp className="text-brochure-gradient-from" size={24} />
+        </div>
+      </div>
+
+      {/* Canadian Flag and Office Address */}
+      <div className="mt-auto text-center">
+        <div className="flex justify-center items-center gap-2 mb-3">
+          <Flag size={18} className="text-red-500" />
+          <span className="text-sm font-medium">Proudly Canadian</span>
+        </div>
+        
+        <div className="flex justify-center items-center gap-1.5 text-xs text-brochure-gray">
+          <MapPin size={12} />
+          <span>700 2 St SW, Calgary, AB T2P 2W2, Canada</span>
         </div>
       </div>
     </div>
