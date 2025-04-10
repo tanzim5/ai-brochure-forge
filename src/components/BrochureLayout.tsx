@@ -4,6 +4,7 @@ import HeroPage from './HeroPage';
 import FeaturesPage from './FeaturesPage';
 import PricingPage from './PricingPage';
 import PageNavigation from './PageNavigation';
+import CanadianFooter from './CanadianFooter';
 
 const BrochureLayout = () => {
   const [currentPage, setCurrentPage] = useState(0);

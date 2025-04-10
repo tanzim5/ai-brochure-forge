@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { MessageSquare, RefreshCw, Globe, BookOpen, ArrowRight } from 'lucide-react';
+import CanadianFooter from './CanadianFooter';
 
 const FeatureCard = ({ icon, title, items }: { icon: React.ReactNode, title: string, items: string[] }) => {
   return (
@@ -111,6 +111,9 @@ const FeaturesPage = () => {
           <ArrowRight className="text-brochure-gradient-to" size={24} />
         </div>
       </div>
+      
+      {/* Footer */}
+      <CanadianFooter />
     </div>
   );
 };
