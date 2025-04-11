@@ -29,11 +29,11 @@ const HeroPage = () => {
         <div className="w-full">
           <h3 className="font-space font-semibold text-xl mb-3">What is AI Automation?</h3>
           <p className="text-brochure-gray">
-            AI automation is your unfair advantage.
-            It's not just tech—it's a tireless team member that never takes a break, never fumbles a call, and never misses a lead.
+            AI automation is your <span className="font-medium text-brochure-gradient-from">unfair advantage</span>.
+            It's not just tech—it's a <span className="font-medium text-brochure-gradient-to">tireless team member</span> that never takes a break, never fumbles a call, and never misses a lead.
           </p>
           <p className="text-brochure-gray mt-2">
-            Our system replaces outdated, human-dependent processes with intelligent voice agents that handle inbound and outbound calls, qualify leads, book appointments, and follow up—all without dropping the ball.
+            Our system replaces <span className="font-medium text-brochure-gradient-from">outdated, human-dependent processes</span> with <span className="font-medium text-brochure-gradient-to">intelligent voice agents</span> that handle inbound and outbound calls, qualify leads, book appointments, and follow up—all without dropping the ball.
           </p>
         </div>
       </div>
