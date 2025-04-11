@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AudioWaveform, Clock, ArrowUp, Phone, Flag, MapPin } from 'lucide-react';
+import { AudioWaveform, Clock, ArrowUp, Phone, MapPin } from 'lucide-react';
 import BrochureHeader from './BrochureHeader';
 
 const HeroPage = () => {
@@ -18,11 +18,8 @@ const HeroPage = () => {
       
       {/* Header Section */}
       <div className="mb-8">
-        <h1 className="font-space font-bold text-4xl mb-2">
-          AI-Powered <span className="gradient-text">Automation</span>
-        </h1>
         <h2 className="font-space text-xl text-brochure-gray">
-          For Modern Real Estate
+          Build for Real Estate Agencies
         </h2>
         <div className="h-1 w-24 bg-gradient-accent mt-4"></div>
       </div>
@@ -54,10 +51,6 @@ const HeroPage = () => {
         <h3 className="font-space font-semibold text-xl mb-4 flex items-center">
           <Clock className="mr-2 text-brochure-gradient-to" size={20} /> Why Now?
         </h3>
-        <p className="text-xl mb-3 text-brochure-gray">
-          The industry's changing. Speed is everything.
-          If you're not first to the lead, you're forgotten.
-        </p>
         <p className="text-xl font-medium text-center italic px-4">
           "In today's competitive market, the difference between success and failure is 
           <span className="gradient-text font-bold"> how quickly you respond </span>
@@ -71,7 +64,11 @@ const HeroPage = () => {
       {/* Canadian Flag and Office Address */}
       <div className="mt-auto text-center">
         <div className="flex justify-center items-center gap-2 mb-3">
-          <Flag size={18} className="text-red-500" />
+          <svg width="18" height="18" viewBox="0 0 512 512" className="flex-shrink-0">
+            <rect width="512" height="512" fill="#f00" />
+            <rect x="128" y="128" width="256" height="256" fill="#fff" />
+            <path d="M256 144l16 48h48l-32 32 16 48-48-32-48 32 16-48-32-32h48z" fill="#f00" />
+          </svg>
           <span className="text-sm font-medium">Proudly Canadian</span>
         </div>
         
