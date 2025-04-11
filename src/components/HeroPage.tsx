@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AudioWaveform, Clock, ArrowUp, Phone, MapPin } from 'lucide-react';
+import { Clock, ArrowUp, MapPin } from 'lucide-react';
 import BrochureHeader from './BrochureHeader';
 
 const HeroPage = () => {
@@ -26,7 +26,7 @@ const HeroPage = () => {
       
       {/* What is AI Automation? */}
       <div className="flex flex-row gap-6 mb-8">
-        <div className="w-1/2">
+        <div className="w-full">
           <h3 className="font-space font-semibold text-xl mb-3">What is AI Automation?</h3>
           <p className="text-brochure-gray">
             AI automation is your unfair advantage.
@@ -35,14 +35,6 @@ const HeroPage = () => {
           <p className="text-brochure-gray mt-2">
             Our system replaces outdated, human-dependent processes with intelligent voice agents that handle inbound and outbound calls, qualify leads, book appointments, and follow up—all without dropping the ball.
           </p>
-        </div>
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="relative w-full h-32">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <AudioWaveform size={48} className="text-brochure-gradient-from animate-pulse-glow" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-accent opacity-10 blur-xl rounded-full"></div>
-          </div>
         </div>
       </div>
       
