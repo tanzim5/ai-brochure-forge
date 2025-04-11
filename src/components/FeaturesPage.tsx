@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MessageSquare, RefreshCw, Globe, BookOpen, ArrowRight, Flag, MapPin } from 'lucide-react';
+import { MessageSquare, RefreshCw, Globe, BookOpen, ArrowRight, MapPin } from 'lucide-react';
 import BrochureHeader from './BrochureHeader';
 
 const FeatureCard = ({ icon, title, items }: { icon: React.ReactNode, title: string, items: string[] }) => {
@@ -113,7 +113,11 @@ const FeaturesPage = () => {
       {/* Canadian Flag and Office Address */}
       <div className="mt-auto text-center">
         <div className="flex justify-center items-center gap-2 mb-3">
-          <Flag size={18} className="text-red-500" />
+          <svg width="18" height="18" viewBox="0 0 512 512" className="flex-shrink-0">
+            <rect width="512" height="512" fill="#f00" />
+            <rect x="128" y="128" width="256" height="256" fill="#fff" />
+            <path d="M256 144l16 48h48l-32 32 16 48-48-32-48 32 16-48-32-32h48z" fill="#f00" />
+          </svg>
           <span className="text-sm font-medium">Proudly Canadian</span>
         </div>
         

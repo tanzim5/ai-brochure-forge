@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Calendar, Globe, Flag, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, Globe, MapPin, ArrowRight } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import BrochureHeader from './BrochureHeader';
 
@@ -77,8 +77,8 @@ const PricingPage = () => {
               </TableRow>
               <TableRow>
                 <TableCell>Monthly Cost</TableCell>
-                <TableCell className="text-green-500">~$600 (avg usage) 🟢</TableCell>
-                <TableCell className="text-red-400">~$3,500–$5,000+ (1 full-time rep) ⛔</TableCell>
+                <TableCell className="text-green-500">$600 (avg usage) 🟢</TableCell>
+                <TableCell className="text-red-400">$3,500–$5,000+ (1 full-time rep) ⛔</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>Availability</TableCell>
@@ -146,7 +146,11 @@ const PricingPage = () => {
       {/* Canadian Flag and Office Address */}
       <div className="mt-auto text-center">
         <div className="flex justify-center items-center gap-2 mb-3">
-          <Flag size={18} className="text-red-500" />
+          <svg width="18" height="18" viewBox="0 0 512 512" className="flex-shrink-0">
+            <rect width="512" height="512" fill="#f00" />
+            <rect x="128" y="128" width="256" height="256" fill="#fff" />
+            <path d="M256 144l16 48h48l-32 32 16 48-48-32-48 32 16-48-32-32h48z" fill="#f00" />
+          </svg>
           <span className="text-sm font-medium">Proudly Canadian</span>
         </div>
         
